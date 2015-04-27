@@ -28,6 +28,7 @@
     [self.view addSubview:btn];
     
     self.view.backgroundColor=[UIColor grayColor];
+    NSLog(@"nskdjfklsjlkdfjkl");
 }
 -(BOOL)slideNavigationControllerShouldDisplayLeftMenu
 {
