@@ -49,6 +49,7 @@
 /* 显示app详细信息 */
 - (void)setAppInfo:(AppModel *)app{
     _nameLabel.text = app.title;
+    NSLog(@"%@",app.title);
 }
 
 - (void)didReceiveMemoryWarning {
