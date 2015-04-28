@@ -8,6 +8,7 @@
 
 #import "AppDetailVC.h"
 #import "AppDetailRequest.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
 @interface AppDetailVC ()
 
@@ -49,7 +50,7 @@
 /* 显示app详细信息 */
 - (void)setAppInfo:(AppModel *)app{
     _nameLabel.text = app.title;
-    NSLog(@"%@",app.title);
+    [_icon sd_setImageWithURL:[NSURL URLWithString:app.icon]];
 }
 
 - (void)didReceiveMemoryWarning {
