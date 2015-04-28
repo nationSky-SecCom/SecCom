@@ -8,6 +8,7 @@
 
 #import "AppDetailVC.h"
 #import "AppDetailRequest.h"
+#import "SDWebImage/UIImageView+WebCache.h"
 
 @interface AppDetailVC ()
 
