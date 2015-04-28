@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, UrlType){
     UrlTypeApplistUnInstall,        /* 未安装应用列表 */
     UrlTypeAppDetails,              /* 应用详情 */
     UrlTypeUserInfo,                /* 用户信息 */
-    UrlTypeAppInstall,              /* 安装应用 */
+    UrlTypeAppInstall,              /* 安装应用  */
 };
 
 @interface RequestURL : NSObject
