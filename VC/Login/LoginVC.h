@@ -9,7 +9,9 @@
 #import "BaseViewController.h"
 #import "SlideNavigationController.h"
 
-@interface LoginVC : BaseViewController<SlideNavigationControllerDelegate>
+@interface LoginVC : BaseViewController<SlideNavigationControllerDelegate,UITextFieldDelegate>
 @property(nonatomic,strong)SlideNavigationController *mySliderNavigationContorller;
-
+@property(nonatomic,strong)IBOutlet UITextField *serverAddressField;
+@property(nonatomic,strong)IBOutlet UITextField *userNameField;
+@property(nonatomic,strong)IBOutlet UITextField *userPasswordField;
 @end
