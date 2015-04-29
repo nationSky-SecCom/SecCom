@@ -1,22 +1,24 @@
 //
-//  SlideBaseVC.m
+//  LBTabBarController.m
 //  SecCom
 //
-//  Created by libo on 4/16/15.
-//  Copyright (c) 2015 LB. All rights reserved.
+//  Created by libo on 15/4/29.
+//  Copyright (c) 2015年 LB. All rights reserved.
 //
 
-#import "SlideBaseVC.h"
+#import "LBTabBarController.h"
 
-@interface SlideBaseVC ()
+@interface LBTabBarController ()
 
 @end
 
-@implementation SlideBaseVC
+@implementation LBTabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.hidesBackButton = YES;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,15 +35,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
-#pragma mark - SlideNavigationController Methods -
-
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
-{
-    return YES;
-}
-
-
 
 @end

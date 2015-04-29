@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "SlideNavigationController.h"
-#import "LeftVC.h"
-#import "LoginVC.h"
+#import "LBTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -19,29 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    LeftVC *leftMenu = [[LeftVC alloc]init];
-    LoginVC *loginVC=[[LoginVC alloc]init];
-    SlideNavigationController *navi=[[SlideNavigationController alloc]initWithRootViewController:loginVC];
-    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
-    [SlideNavigationController sharedInstance].menuRevealAnimationDuration = .18;
 
-    
-    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidClose object:nil queue:nil usingBlock:^(NSNotification *note) {
-        NSString *menu = note.userInfo[@"menu"];
-        NSLog(@"Closed %@", menu);
-    }];
-    
-    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidOpen object:nil queue:nil usingBlock:^(NSNotification *note) {
-        NSString *menu = note.userInfo[@"menu"];
-        NSLog(@"Opened %@", menu);
-    }];
-    
-    [[NSNotificationCenter defaultCenter] addObserverForName:SlideNavigationControllerDidReveal object:nil queue:nil usingBlock:^(NSNotification *note) {
-        NSString *menu = note.userInfo[@"menu"];
-        NSLog(@"Revealed %@", menu);
-    }];
-    
-    self.window.rootViewController=navi;
     
     return YES;
 }

@@ -6,9 +6,15 @@
 //  Copyright (c) 2015年 LB. All rights reserved.
 //
 
-#import "SlideBaseVC.h"
+#import "BaseViewController.h"
 
-@interface HomeViewController : SlideBaseVC
+@interface HomeViewController : BaseViewController <UICollectionViewDelegate,UICollectionViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UIImageView *HeadPortrait;
+
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+
+
 
 
 - (IBAction)showAllAppList:(UIButton *)sender;

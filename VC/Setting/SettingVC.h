@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 LB. All rights reserved.
 //
 
-#import "SlideBaseVC.h"
+#import "BaseViewController.h"
 
-@interface SettingVC : SlideBaseVC
+@interface SettingVC : BaseViewController
 
 @end

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="201" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="201" height="167"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ens-uj-NK6">
+                        <rect key="frame" x="50" y="30" width="101" height="84"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="应用名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUj-CQ-Htm">
+                        <rect key="frame" x="66" y="128" width="68" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="dUj-CQ-Htm" firstAttribute="top" secondItem="ens-uj-NK6" secondAttribute="bottom" constant="14" id="3zA-cA-Zbb"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="4nN-LD-4d8"/>
+                <constraint firstAttribute="trailing" secondItem="dUj-CQ-Htm" secondAttribute="trailing" constant="5" id="6Pl-nS-RJl"/>
+                <constraint firstItem="dUj-CQ-Htm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="DiM-NH-EeA"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="centerX" secondItem="dUj-CQ-Htm" secondAttribute="centerX" id="Far-vU-PrF"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="Olo-wi-wVz"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="VDc-7k-c50"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="VuS-ea-gZL"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="Z91-97-cFj"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="guW-Xi-cvE"/>
+                <constraint firstAttribute="bottom" secondItem="dUj-CQ-Htm" secondAttribute="bottom" constant="18" id="hq9-UI-Xhu"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dUj-CQ-Htm" secondAttribute="bottom" constant="8" id="iE7-NU-ekW"/>
+                <constraint firstItem="dUj-CQ-Htm" firstAttribute="top" secondItem="ens-uj-NK6" secondAttribute="bottom" constant="14" id="k6B-A2-kkh"/>
+                <constraint firstItem="dUj-CQ-Htm" firstAttribute="top" secondItem="ens-uj-NK6" secondAttribute="bottom" constant="20" id="nQO-Km-R5g"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="o7E-PX-RxA"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="centerX" secondItem="dUj-CQ-Htm" secondAttribute="centerX" id="oHD-WW-A5p"/>
+                <constraint firstItem="dUj-CQ-Htm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="qSO-cf-q4M"/>
+                <constraint firstItem="ens-uj-NK6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="rJb-Mw-XT3"/>
+                <constraint firstAttribute="trailing" secondItem="ens-uj-NK6" secondAttribute="trailing" constant="20" id="sjp-7I-H0p"/>
+                <constraint firstAttribute="trailing" secondItem="ens-uj-NK6" secondAttribute="trailing" constant="15" id="swp-8q-vcx"/>
+            </constraints>
+            <size key="customSize" width="201" height="167"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4nN-LD-4d8"/>
+                    <exclude reference="Far-vU-PrF"/>
+                    <exclude reference="Olo-wi-wVz"/>
+                    <exclude reference="Z91-97-cFj"/>
+                    <exclude reference="rJb-Mw-XT3"/>
+                    <exclude reference="swp-8q-vcx"/>
+                    <exclude reference="k6B-A2-kkh"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="icon" destination="ens-uj-NK6" id="Xws-aI-aMT"/>
+                <outlet property="name" destination="dUj-CQ-Htm" id="iGz-dj-nmX"/>
+            </connections>
+            <point key="canvasLocation" x="288.5" y="218.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
