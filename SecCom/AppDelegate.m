@@ -41,6 +41,7 @@
         NSLog(@"Revealed %@", menu);
     }];
     
+    NSLog(@"sdfsfdsfs");
     self.window.rootViewController=navi;
     
     return YES;
