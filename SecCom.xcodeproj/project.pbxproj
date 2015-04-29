@@ -35,6 +35,7 @@
 		7528B0071AE77C4000250D08 /* AppListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528B0051AE77C4000250D08 /* AppListCell.m */; };
 		7528B0081AE77C4000250D08 /* AppListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7528B0061AE77C4000250D08 /* AppListCell.xib */; };
 		755A799F1ADFBC1E00046777 /* SlideBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 755A799E1ADFBC1E00046777 /* SlideBaseVC.m */; };
+		757F9BA01AF0ADAC00A6894D /* ActiveDeviceRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 757F9B9F1AF0ADAC00A6894D /* ActiveDeviceRequest.m */; };
 		75EDCA001ADFA99900D5A069 /* SlideNavigationContorllerAnimatorFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDC9F21ADFA99900D5A069 /* SlideNavigationContorllerAnimatorFade.m */; };
 		75EDCA011ADFA99900D5A069 /* SlideNavigationContorllerAnimatorScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDC9F41ADFA99900D5A069 /* SlideNavigationContorllerAnimatorScale.m */; };
 		75EDCA021ADFA99900D5A069 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 75EDC9F61ADFA99900D5A069 /* SlideNavigationContorllerAnimatorScaleAndFade.m */; };
@@ -159,6 +160,8 @@
 		7528B0061AE77C4000250D08 /* AppListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppListCell.xib; sourceTree = "<group>"; };
 		755A799D1ADFBC1E00046777 /* SlideBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideBaseVC.h; sourceTree = "<group>"; };
 		755A799E1ADFBC1E00046777 /* SlideBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideBaseVC.m; sourceTree = "<group>"; };
+		757F9B9E1AF0ADAC00A6894D /* ActiveDeviceRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveDeviceRequest.h; sourceTree = "<group>"; };
+		757F9B9F1AF0ADAC00A6894D /* ActiveDeviceRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveDeviceRequest.m; sourceTree = "<group>"; };
 		75EDC9EC1ADF83B800D5A069 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		75EDC9F01ADFA99900D5A069 /* SlideNavigationContorllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimator.h; sourceTree = "<group>"; };
 		75EDC9F11ADFA99900D5A069 /* SlideNavigationContorllerAnimatorFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationContorllerAnimatorFade.h; sourceTree = "<group>"; };
@@ -629,6 +632,8 @@
 				7528AFD51AE73E2C00250D08 /* AppDetailRequest.m */,
 				7528B0011AE7767700250D08 /* UserInfoRequest.h */,
 				7528B0021AE7767700250D08 /* UserInfoRequest.m */,
+				757F9B9E1AF0ADAC00A6894D /* ActiveDeviceRequest.h */,
+				757F9B9F1AF0ADAC00A6894D /* ActiveDeviceRequest.m */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -1096,6 +1101,7 @@
 				185FD1811AE64D6500A19BDE /* LoginVC.m in Sources */,
 				75F3B7611AE9E3D000E65A2E /* LBProgressBarView.m in Sources */,
 				75F3B7671AE9E3D000E65A2E /* NSDate+TimeInterval.m in Sources */,
+				757F9BA01AF0ADAC00A6894D /* ActiveDeviceRequest.m in Sources */,
 				7528B0071AE77C4000250D08 /* AppListCell.m in Sources */,
 				75F3B76C1AE9E3D000E65A2E /* NQSave.m in Sources */,
 				75F3B75B1AE9E3D000E65A2E /* SelectViewItemTextView.m in Sources */,
