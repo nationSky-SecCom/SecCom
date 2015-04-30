@@ -7,7 +7,7 @@
 //
 
 #import "SettingVC.h"
-
+#import "UserInfoViewController.h"
 @interface SettingVC ()
 
 @end
@@ -16,10 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.title = @"Setting";
+    self.title = @"设置";
 }
-
+-(IBAction)naviToUserInfoViewController:(id)sender
+{
+    UserInfoViewController *userInfo=[[UserInfoViewController alloc]init];
+    [self.navigationController pushViewController:userInfo animated:YES];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
