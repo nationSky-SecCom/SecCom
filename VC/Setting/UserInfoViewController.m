@@ -40,13 +40,6 @@ typedef enum
     
     [self.userPortraitBtn setBackgroundImage:userPortraitImg forState:UIControlStateNormal];
     
-    
-
-    
-    
-
-    
-    
 }
 -(IBAction)uploadUserPortrait:(id)sender
 {
@@ -93,7 +86,7 @@ typedef enum
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
         picker.delegate = self;
         picker.mediaTypes = @[(NSString*)kUTTypeImage];
-        //        picker.allowsEditing = YES;
+                picker.allowsEditing = YES;
         
         
     }
@@ -112,7 +105,7 @@ typedef enum
         picker.delegate=self;
         [self presentViewController:picker animated:YES completion:NULL];
     }
-    
+
 }
 #pragma mark-相册回调
 -(void)assetsPickerController:(CTAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets

@@ -128,6 +128,8 @@
 {
     CTAssetsGroupViewController *groupViewController = [[CTAssetsGroupViewController alloc] init];
     
+    
+    
     if (self = [super initWithRootViewController:groupViewController])
     {
         _maximumNumberOfSelection   = NSIntegerMax;
@@ -135,7 +137,9 @@
         _showsCancelButton          = YES;
         
         if ([self respondsToSelector:@selector(setContentSizeForViewInPopover:)])
-            [self setContentSizeForViewInPopover:kPopoverContentSize];
+//            [self setContentSizeForViewInPopover:kPopoverContentSize];
+        
+        [self setPreferredContentSize:kPopoverContentSize];
     }
     
     return self;
@@ -166,7 +170,9 @@
     if (self = [super initWithStyle:UITableViewStylePlain])
     {
         if ([self respondsToSelector:@selector(setContentSizeForViewInPopover:)])
-            [self setContentSizeForViewInPopover:kPopoverContentSize];
+//            [self setContentSizeForViewInPopover:kPopoverContentSize];
+            [self setPreferredContentSize:kPopoverContentSize];
+
     }
     
     return self;
@@ -400,7 +406,7 @@
 
 #pragma mark - Table view delegate
 
-- (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return kThumbnailLength + 12;
 }
@@ -408,6 +414,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CTAssetsViewController *vc = [[CTAssetsViewController alloc] init];
+//    vc.collectionView
     vc.assetsGroup = [self.groups objectAtIndex:indexPath.row];
 
     [self.navigationController pushViewController:vc animated:YES];
@@ -444,7 +451,7 @@
     
     self.imageView.image        = [UIImage imageWithCGImage:posterImage scale:scale orientation:UIImageOrientationUp];
     self.textLabel.text         = [assetsGroup valueForProperty:ALAssetsGroupPropertyName];
-    self.detailTextLabel.text   = [NSString stringWithFormat:@"%d", [assetsGroup numberOfAssets]];
+    self.detailTextLabel.text   = [NSString stringWithFormat:@"%ld", (long)[assetsGroup numberOfAssets]];
     self.accessoryType          = UITableViewCellAccessoryDisclosureIndicator;
 }
 
@@ -491,7 +498,9 @@
             [self setEdgesForExtendedLayout:UIRectEdgeNone];
         
         if ([self respondsToSelector:@selector(setContentSizeForViewInPopover:)])
-            [self setContentSizeForViewInPopover:kPopoverContentSize];
+//            [self setContentSizeForViewInPopover:kPopoverContentSize];
+            [self setPreferredContentSize:kPopoverContentSize];
+
     }
     
     return self;
