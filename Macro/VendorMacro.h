@@ -34,48 +34,7 @@
 
 //是否登录
 #define  USER_LOGIN         @"user_login"
-/*
- 获取私人图片路径
- */
 
-//NS_INLINE id getPrivateImgPath(NSString *tenantsId,NSString *userName)
-//{
-//    
-//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-//    NSString *docDir = [paths objectAtIndex:0];
-//    NSString  * TenantsPath=[docDir stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",tenantsId]];
-//    NSFileManager *file=[NSFileManager defaultManager];
-//    NSString *userPath;
-//    NSString *imgPath;
-//    if ([file fileExistsAtPath:TenantsPath]==YES) {
-//        userPath=[TenantsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",userName]];
-//        if ([file fileExistsAtPath:userPath]==YES) {
-//            imgPath=[userPath stringByAppendingPathComponent:[NSString stringWithFormat:@"img"]];
-//        }
-//        else
-//        {
-//            [file createDirectoryAtPath:userPath withIntermediateDirectories:YES attributes:nil error:nil];
-//            imgPath=[userPath stringByAppendingPathComponent:[NSString stringWithFormat:@"img"]];
-//        }
-//    }
-//    else
-//    {
-//        [file createDirectoryAtPath:TenantsPath withIntermediateDirectories:YES attributes:nil error:nil];
-//        userPath=[TenantsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@",userName]];
-//        if ([file fileExistsAtPath:userPath]==YES) {
-//            imgPath=[userPath stringByAppendingPathComponent:[NSString stringWithFormat:@"img"]];
-//        }
-//        else
-//        {
-//            [file createDirectoryAtPath:userPath withIntermediateDirectories:YES attributes:nil error:nil];
-//            imgPath=[userPath stringByAppendingPathComponent:[NSString stringWithFormat:@"img"]];
-//        }
-//        
-//    }
-//    
-//    
-//    return imgPath;
-//}
 /*
  获得项目路径
  */
@@ -127,6 +86,16 @@ NS_INLINE id getUserImgPath(NSString *userPath)
         [file createDirectoryAtPath:userImgPath withIntermediateDirectories:YES attributes:nil error:nil];
         return userImgPath;
     }
+}
+/*
+ 隐藏没有内容多余的分割线
+ */
+NS_INLINE void setExtraCellLineHidden(UITableView *tableView)
+{
+    UIView *view =[ [UIView alloc]init];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+    [tableView setTableHeaderView:view];
 }
 
 

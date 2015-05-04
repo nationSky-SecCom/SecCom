@@ -8,6 +8,7 @@
 
 #import "SettingVC.h"
 #import "UserInfoViewController.h"
+#import "AboutSetingViewController.h"
 @interface SettingVC ()
 
 @end
@@ -17,11 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"设置";
+
 }
 -(IBAction)naviToUserInfoViewController:(id)sender
 {
     UserInfoViewController *userInfo=[[UserInfoViewController alloc]init];
     [self.navigationController pushViewController:userInfo animated:YES];
+    
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden=YES;
+    
+}
+-(IBAction)naviToAboutController:(id)sender
+{
+    AboutSetingViewController *aboutSeting=[[AboutSetingViewController alloc]init];
+    [self.navigationController pushViewController:aboutSeting animated:YES];
     
 }
 - (void)didReceiveMemoryWarning {

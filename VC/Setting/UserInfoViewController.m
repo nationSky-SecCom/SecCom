@@ -39,6 +39,8 @@ typedef enum
     UIImage *userPortraitImg=[UIImage imageWithContentsOfFile:userPortraitImgPath];
     
     [self.userPortraitBtn setBackgroundImage:userPortraitImg forState:UIControlStateNormal];
+
+    
     
 }
 -(IBAction)uploadUserPortrait:(id)sender

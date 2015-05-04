@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184684101AF7410900F72013 /* FunctionSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846840E1AF7410900F72013 /* FunctionSetingViewController.m */; };
+		184684111AF7410900F72013 /* FunctionSetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1846840F1AF7410900F72013 /* FunctionSetingViewController.xib */; };
+		184684151AF7422100F72013 /* PermissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184684131AF7422100F72013 /* PermissionViewController.m */; };
+		184684161AF7422100F72013 /* PermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184684141AF7422100F72013 /* PermissionViewController.xib */; };
+		1846841A1AF7424F00F72013 /* HelpAndFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184684181AF7424F00F72013 /* HelpAndFeedbackViewController.m */; };
+		1846841B1AF7424F00F72013 /* HelpAndFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184684191AF7424F00F72013 /* HelpAndFeedbackViewController.xib */; };
 		185FD1811AE64D6500A19BDE /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FD17F1AE64D6500A19BDE /* LoginVC.m */; };
 		185FD1821AE64D6500A19BDE /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185FD1801AE64D6500A19BDE /* LoginVC.xib */; };
 		1884022A1AF1CCAC007CB141 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188402271AF1CCAC007CB141 /* UserInfoViewController.m */; };
@@ -17,6 +23,8 @@
 		18DBDB8C1AF1FD96002C4DC4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBDB891AF1FD96002C4DC4 /* Default.png */; };
 		18DBDB8D1AF1FD96002C4DC4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBDB8A1AF1FD96002C4DC4 /* Default-568h@2x.png */; };
 		18DBDB8E1AF1FD96002C4DC4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DBDB8B1AF1FD96002C4DC4 /* Default@2x.png */; };
+		18DBDB921AF22C31002C4DC4 /* AboutSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBDB901AF22C31002C4DC4 /* AboutSetingViewController.m */; };
+		18DBDB931AF22C31002C4DC4 /* AboutSetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBDB911AF22C31002C4DC4 /* AboutSetingViewController.xib */; };
 		7528AFD61AE73E2C00250D08 /* AppListAllRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFCF1AE73E2C00250D08 /* AppListAllRequest.m */; };
 		7528AFD71AE73E2C00250D08 /* AppListInstalledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFD11AE73E2C00250D08 /* AppListInstalledRequest.m */; };
 		7528AFD81AE73E2C00250D08 /* ApplistUnInstalledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFD31AE73E2C00250D08 /* ApplistUnInstalledRequest.m */; };
@@ -122,6 +130,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1846840D1AF7410900F72013 /* FunctionSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionSetingViewController.h; sourceTree = "<group>"; };
+		1846840E1AF7410900F72013 /* FunctionSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionSetingViewController.m; sourceTree = "<group>"; };
+		1846840F1AF7410900F72013 /* FunctionSetingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionSetingViewController.xib; sourceTree = "<group>"; };
+		184684121AF7422100F72013 /* PermissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionViewController.h; sourceTree = "<group>"; };
+		184684131AF7422100F72013 /* PermissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionViewController.m; sourceTree = "<group>"; };
+		184684141AF7422100F72013 /* PermissionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PermissionViewController.xib; sourceTree = "<group>"; };
+		184684171AF7424F00F72013 /* HelpAndFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpAndFeedbackViewController.h; sourceTree = "<group>"; };
+		184684181AF7424F00F72013 /* HelpAndFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpAndFeedbackViewController.m; sourceTree = "<group>"; };
+		184684191AF7424F00F72013 /* HelpAndFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpAndFeedbackViewController.xib; sourceTree = "<group>"; };
 		185FD17E1AE64D6500A19BDE /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		185FD17F1AE64D6500A19BDE /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		185FD1801AE64D6500A19BDE /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
@@ -136,6 +153,9 @@
 		18DBDB891AF1FD96002C4DC4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		18DBDB8A1AF1FD96002C4DC4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		18DBDB8B1AF1FD96002C4DC4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		18DBDB8F1AF22C31002C4DC4 /* AboutSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSetingViewController.h; sourceTree = "<group>"; };
+		18DBDB901AF22C31002C4DC4 /* AboutSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSetingViewController.m; sourceTree = "<group>"; };
+		18DBDB911AF22C31002C4DC4 /* AboutSetingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSetingViewController.xib; sourceTree = "<group>"; };
 		1D83F6B07CDF56EEC2243FB8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		230F271E6F81F5E57D512406 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7528AFCE1AE73E2C00250D08 /* AppListAllRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListAllRequest.h; sourceTree = "<group>"; };
@@ -396,6 +416,18 @@
 				7528AFF21AE73E9A00250D08 /* SettingVC.h */,
 				7528AFF31AE73E9A00250D08 /* SettingVC.m */,
 				7528AFF41AE73E9A00250D08 /* SettingVC.xib */,
+				18DBDB8F1AF22C31002C4DC4 /* AboutSetingViewController.h */,
+				18DBDB901AF22C31002C4DC4 /* AboutSetingViewController.m */,
+				18DBDB911AF22C31002C4DC4 /* AboutSetingViewController.xib */,
+				1846840D1AF7410900F72013 /* FunctionSetingViewController.h */,
+				1846840E1AF7410900F72013 /* FunctionSetingViewController.m */,
+				1846840F1AF7410900F72013 /* FunctionSetingViewController.xib */,
+				184684121AF7422100F72013 /* PermissionViewController.h */,
+				184684131AF7422100F72013 /* PermissionViewController.m */,
+				184684141AF7422100F72013 /* PermissionViewController.xib */,
+				184684171AF7424F00F72013 /* HelpAndFeedbackViewController.h */,
+				184684181AF7424F00F72013 /* HelpAndFeedbackViewController.m */,
+				184684191AF7424F00F72013 /* HelpAndFeedbackViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1046,7 +1078,10 @@
 				185FD1821AE64D6500A19BDE /* LoginVC.xib in Resources */,
 				7528AFFA1AE73E9A00250D08 /* AppListInstalled.xib in Resources */,
 				7528B0081AE77C4000250D08 /* AppListCell.xib in Resources */,
+				18DBDB931AF22C31002C4DC4 /* AboutSetingViewController.xib in Resources */,
+				184684161AF7422100F72013 /* PermissionViewController.xib in Resources */,
 				7528AFFC1AE73E9A00250D08 /* AppListUnInstalled.xib in Resources */,
+				1846841B1AF7424F00F72013 /* HelpAndFeedbackViewController.xib in Resources */,
 				7528B0001AE73E9A00250D08 /* SettingVC.xib in Resources */,
 				75EDCA051ADFA99900D5A069 /* menu-button.png in Resources */,
 				75FB5C101ADE2CDE00267D03 /* Main.storyboard in Resources */,
@@ -1062,6 +1097,7 @@
 				75EDCA061ADFA99900D5A069 /* menu-button@2x.png in Resources */,
 				75FB5C121ADE2CDE00267D03 /* Images.xcassets in Resources */,
 				7528AFF81AE73E9A00250D08 /* ApplistAll.xib in Resources */,
+				184684111AF7410900F72013 /* FunctionSetingViewController.xib in Resources */,
 				757F9C3F1AF0D88100A6894D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1114,6 +1150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7528AFD91AE73E2C00250D08 /* AppDetailRequest.m in Sources */,
+				1846841A1AF7424F00F72013 /* HelpAndFeedbackViewController.m in Sources */,
 				7528AFF51AE73E9A00250D08 /* AppDetailVC.m in Sources */,
 				75F6B6F61AE4D5480071EBDE /* BaseModel.m in Sources */,
 				757F9C431AF0D90400A6894D /* HomeCollectionViewCell.m in Sources */,
@@ -1135,10 +1172,12 @@
 				75F3B7691AE9E3D000E65A2E /* PopoverCell.m in Sources */,
 				75F3B76A1AE9E3D000E65A2E /* PopoverTable.m in Sources */,
 				75EDCA031ADFA99900D5A069 /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
+				184684101AF7410900F72013 /* FunctionSetingViewController.m in Sources */,
 				75FB5C621ADE50AF00267D03 /* SBJsonWriter.m in Sources */,
 				75F3B7741AEA1F4D00E65A2E /* ViewController.m in Sources */,
 				75EDCA071ADFA99900D5A069 /* SlideNavigationController.m in Sources */,
 				7528AFFF1AE73E9A00250D08 /* SettingVC.m in Sources */,
+				18DBDB921AF22C31002C4DC4 /* AboutSetingViewController.m in Sources */,
 				75F3B7601AE9E3D000E65A2E /* LBLoadingView.m in Sources */,
 				75FB5C5F1ADE50AF00267D03 /* NSString+SBJSON.m in Sources */,
 				188402321AF1CD1D007CB141 /* CTAssetsPickerController.m in Sources */,
@@ -1146,6 +1185,7 @@
 				75F3B7631AE9E3D000E65A2E /* LBRandom.m in Sources */,
 				757F9BCB1AF0C1C700A6894D /* LBTabBarController.m in Sources */,
 				75F3B7571AE9E3D000E65A2E /* DrawLine.m in Sources */,
+				184684151AF7422100F72013 /* PermissionViewController.m in Sources */,
 				75F3B7541AE9E3D000E65A2E /* EVCircularProgressView.m in Sources */,
 				75FB5C5C1ADE50AF00267D03 /* GTMBase64.m in Sources */,
 				75EDCA011ADFA99900D5A069 /* SlideNavigationContorllerAnimatorScale.m in Sources */,
