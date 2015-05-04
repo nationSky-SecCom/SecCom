@@ -10,11 +10,14 @@
 #import "AppDetailRequest.h"
 #import "SDWebImage/UIImageView+WebCache.h"
 #import "AppListCell.h"
+#import "AppDetailsImageShowCell.h"
 
 @interface AppDetailVC ()
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
+/* 应用截图展示cell */
+@property (nonatomic, strong) UINib *imageNib;
 
 @end
 
@@ -52,7 +55,8 @@
 
 /* 显示app详细信息 */
 - (void)setAppInfo:(AppModel *)app{
-
+    _appModel = app;
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -67,16 +71,49 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!self.cellNib) {
-        self.cellNib = [UINib nibWithNibName:@"AppListCell" bundle:nil];
-        [self.tableView registerNib:self.cellNib forCellReuseIdentifier:@"AppListCell"];
+    switch (indexPath.row) {
+        case 0:
+        {
+            if (!self.cellNib) {
+                self.cellNib = [UINib nibWithNibName:@"AppListCell" bundle:nil];
+                [self.tableView registerNib:self.cellNib forCellReuseIdentifier:@"AppListCell"];
+            }
+            AppListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AppListCell"];
+            
+            cell.name = _appModel.title;
+            [cell.icon sd_setImageWithURL:[NSURL URLWithString:_appModel.icon] placeholderImage:nil];
+            if (cell) {
+                return cell;
+            }
+        }
+
+            break;
+        case 1:
+        {
+            if (!self.imageNib) {
+                self.imageNib = [UINib nibWithNibName:@"AppDetailsImageShowCell" bundle:nil];
+                [self.tableView registerNib:self.imageNib forCellReuseIdentifier:@"AppDetailsImageShowCell"];
+            }
+            AppDetailsImageShowCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AppDetailsImageShowCell"];
+
+            [cell setCellModel:_appModel];
+            if (cell) {
+                return cell;
+            }
+        }
+            
+            break;
+        default:
+            {
+                UITableViewCell *cell = [[UITableViewCell alloc] init];
+                return cell;
+            }
+            break;
     }
-    AppListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AppListCell"];
     
-    AppModel *model = self.items[indexPath.row];
-    cell.name = model.title;
-    [cell.icon sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:nil];
-    return cell;
+    UITableViewCell *cell0 = [[UITableViewCell alloc] init];
+    return cell0;
+    
 }
 
 #pragma mark ----- UITableViewDelegate -----

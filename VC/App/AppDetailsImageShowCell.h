@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppModel.h"
+#import "BaseTableViewCell.h"
 
-@interface AppDetailsImageShowCell : UITableViewCell
+@interface AppDetailsImageShowCell : BaseTableViewCell
 
 
 @property (strong, nonatomic) IBOutlet UILabel *topLabel;
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
+- (void)setCellModel:(AppModel *)app;
 
 
 
