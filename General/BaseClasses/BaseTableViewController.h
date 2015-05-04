@@ -15,7 +15,7 @@
 @property (nonatomic, strong) UINib *cellNib;
 
 @property (nonatomic, strong) NSArray *items;
-@property (nonatomic, copy) NSString *cellIdentifier;
+
 
 
 

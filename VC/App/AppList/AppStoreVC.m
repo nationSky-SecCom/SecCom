@@ -21,8 +21,6 @@
     [super viewDidLoad];
 
     [self HTTPRequest];
-
-    self.cellIdentifier = @"appStore";
     
 }
 
@@ -74,9 +72,9 @@
 {
     if (!self.cellNib) {
         self.cellNib = [UINib nibWithNibName:@"AppListCell" bundle:nil];
-        [self.tableView registerNib:self.cellNib forCellReuseIdentifier:self.cellIdentifier];
+        [self.tableView registerNib:self.cellNib forCellReuseIdentifier:@"AppListCell"];
     }
-    AppListCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+    AppListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AppListCell"];
     
     AppModel *model = self.items[indexPath.row];
     cell.name = model.title;
@@ -93,7 +91,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     AppDetailVC *detail = [mainStoryboard instantiateViewControllerWithIdentifier:@"AppDetailVC"];
-//    detail.appModel = self.items[indexPath.row];
+    detail.appModel = self.items[indexPath.row];
     [self.navigationController pushViewController:detail animated:YES];
 }
 

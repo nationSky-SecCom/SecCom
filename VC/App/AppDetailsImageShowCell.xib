@@ -26,7 +26,6 @@
                     </scrollView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="otD-Pi-l8Y" firstAttribute="top" secondItem="hXL-J3-41L" secondAttribute="bottom" constant="5" id="6my-BH-ur4"/>
                     <constraint firstItem="hXL-J3-41L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7rl-cW-8Pw"/>
                     <constraint firstAttribute="centerX" secondItem="otD-Pi-l8Y" secondAttribute="centerX" id="CjX-Ls-iGe"/>
                     <constraint firstItem="hXL-J3-41L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="RvW-0c-osn"/>
@@ -35,14 +34,7 @@
                     <constraint firstItem="otD-Pi-l8Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cVH-EI-xgK"/>
                     <constraint firstAttribute="trailing" secondItem="otD-Pi-l8Y" secondAttribute="trailing" id="chQ-bH-keo"/>
                     <constraint firstAttribute="trailingMargin" secondItem="hXL-J3-41L" secondAttribute="trailing" constant="214" id="eNE-0m-U9B"/>
-                    <constraint firstItem="otD-Pi-l8Y" firstAttribute="top" secondItem="hXL-J3-41L" secondAttribute="bottom" constant="8" id="m5E-wY-RF4"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="6my-BH-ur4"/>
-                        <exclude reference="m5E-wY-RF4"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="scrollView" destination="otD-Pi-l8Y" id="Lqy-aN-wjr"/>

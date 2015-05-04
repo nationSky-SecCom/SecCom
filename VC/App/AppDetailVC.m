@@ -9,10 +9,12 @@
 #import "AppDetailVC.h"
 #import "AppDetailRequest.h"
 #import "SDWebImage/UIImageView+WebCache.h"
+#import "AppListCell.h"
 
 @interface AppDetailVC ()
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
 
@@ -59,15 +61,21 @@
 }
 
 #pragma mark ----- UITableViewDataSource -----
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (!self.cellNib) {
         self.cellNib = [UINib nibWithNibName:@"AppListCell" bundle:nil];
-        [self.tableView registerNib:self.cellNib forCellReuseIdentifier:self.cellIdentifier];
+        [self.tableView registerNib:self.cellNib forCellReuseIdentifier:@"AppListCell"];
     }
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+    AppListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AppListCell"];
     
-
+    AppModel *model = self.items[indexPath.row];
+    cell.name = model.title;
+    [cell.icon sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:nil];
     return cell;
 }
 
