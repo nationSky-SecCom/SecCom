@@ -14,4 +14,5 @@
 @property(nonatomic,strong)IBOutlet UITextField *serverAddressField;
 @property(nonatomic,strong)IBOutlet UITextField *userNameField;
 @property(nonatomic,strong)IBOutlet UITextField *userPasswordField;
+@property(nonatomic,strong)NSDictionary *activeResponseDic;
 @end

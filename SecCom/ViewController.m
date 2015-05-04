@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "LBTabBarController.h"
-
+#import "LoginVC.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +19,8 @@
     [super viewDidLoad];
 
 
+
+    
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     LBTabBarController *tabBarVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"LBTabBarController"];
     

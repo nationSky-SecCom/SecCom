@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LBTabBarController.h"
-
+#import "LoginVC.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    
+    LoginVC *login=[[LoginVC alloc]init];
+    UINavigationController *navi=[[UINavigationController alloc]initWithRootViewController:login];
+    self.window.rootViewController=navi;
+    
+    
+    
 //    LBTabBarController *tabBar = [[LBTabBarController alloc] init];
 //    UINavigationController *navTabBar = [[UINavigationController alloc] initWithRootViewController:tabBar];
 //    self.window.rootViewController = navTabBar;

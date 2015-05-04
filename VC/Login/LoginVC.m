@@ -18,9 +18,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
     self.view.backgroundColor=[UIColor grayColor];
     
     
@@ -38,9 +35,14 @@
         return;
     }
     
+    NSString *deviceVersion=[[UIDevice currentDevice]systemVersion];
+
+    
+//    NSLog(@"%f",    [[[UIDevice currentDevice]systemVersion]floatValue]);
     
     ActiveDeviceRequest *activeRequest=[[ActiveDeviceRequest alloc]init];
     activeRequest.parameters=@{
+                               @"request":@{
                                 @"operId":@{
                                             @"tokenId":@"",
                                             @"userId":@"",
@@ -49,32 +51,47 @@
                                     },
                                 @"requestData":@{
                                     @"userInfo":@{
-                                            @"username":@"",
-                                            @"password":@""
+                                            @"userName":@"test",
+                                            @"password":@"RJKctynh0Ps="
                                             },
                                @"deviceInfo":@{
-                                    @"OSVersion":@"",
+                                    @"OSVersion":deviceVersion,
                                     @"model":@"",
-                                    @"modelType":@"",
+                                    @"modelType":@"23",
                                     @"deviceName":@"",
-                                    @"clientOS":@"",
-                                    @"jailed":@"",
-                                    @"Idfa":@"",
+                                    @"clientOS":@"2",
+                                    @"jailed":@"0",
+                                    @"Idfa":@"D21F2394-CFCA-489F-AEC4-1AD341E4331D",
                                     @"SN":@"",
                                     @"WIFIMAC":@""}
                                }
+                            }
                             };
     [activeRequest POSTRequest:^(id responseObject) {
-        HomeViewController *home=[[HomeViewController alloc]init];
-        [self.navigationController pushViewController:home animated:YES];
+        
+        self.activeResponseDic=(NSDictionary *)responseObject;
+        
+        if (self.activeResponseDic.count>0) {
+            NSString *profileUrl=[self.activeResponseDic objectForKey:@"profileUrl"];
+            [[UIApplication sharedApplication]openURL:[NSURL URLWithString:profileUrl]];
+        }
+        else
+        {
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:nil message:@"无下载地址" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+        
+        
+//        HomeViewController *home=[[HomeViewController alloc]init];
+//        [self.navigationController pushViewController:home animated:YES];
     } Failure:^(NSString *errorMessage) {
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:nil message:errorMessage delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
         [alert show];
     }];
     
     
-    
 }
+
 #pragma mark-关闭虚拟键盘
 - (IBAction)backgroundTap:(id)sender {
     
