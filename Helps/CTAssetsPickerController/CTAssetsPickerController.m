@@ -135,7 +135,8 @@
         _showsCancelButton          = YES;
         
         if ([self respondsToSelector:@selector(setContentSizeForViewInPopover:)])
-            [self setContentSizeForViewInPopover:kPopoverContentSize];
+//            [self setContentSizeForViewInPopover:kPopoverContentSize];
+            [self setPreferredContentSize:kPopoverContentSize];
     }
     
     return self;
@@ -166,7 +167,8 @@
     if (self = [super initWithStyle:UITableViewStylePlain])
     {
         if ([self respondsToSelector:@selector(setContentSizeForViewInPopover:)])
-            [self setContentSizeForViewInPopover:kPopoverContentSize];
+//            [self setContentSizeForViewInPopover:kPopoverContentSize];
+            [self setPreferredContentSize:kPopoverContentSize];
     }
     
     return self;
@@ -400,7 +402,7 @@
 
 #pragma mark - Table view delegate
 
-- (float)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return kThumbnailLength + 12;
 }
@@ -491,7 +493,9 @@
             [self setEdgesForExtendedLayout:UIRectEdgeNone];
         
         if ([self respondsToSelector:@selector(setContentSizeForViewInPopover:)])
-            [self setContentSizeForViewInPopover:kPopoverContentSize];
+//            [self setContentSizeForViewInPopover:kPopoverContentSize];
+        
+        [self setPreferredContentSize:kPopoverContentSize];
     }
     
     return self;
