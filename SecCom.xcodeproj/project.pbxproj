@@ -10,6 +10,21 @@
 		185FD1811AE64D6500A19BDE /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FD17F1AE64D6500A19BDE /* LoginVC.m */; };
 		185FD1821AE64D6500A19BDE /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185FD1801AE64D6500A19BDE /* LoginVC.xib */; };
 		7500AB681AF748E500225020 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB671AF748E500225020 /* BaseTableViewCell.m */; };
+		7500AB7B1AF7526C00225020 /* AboutSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB6A1AF7526C00225020 /* AboutSetingViewController.m */; };
+		7500AB7C1AF7526C00225020 /* AboutSetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB6B1AF7526C00225020 /* AboutSetingViewController.xib */; };
+		7500AB7D1AF7526C00225020 /* FunctionSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB6D1AF7526C00225020 /* FunctionSetingViewController.m */; };
+		7500AB7E1AF7526C00225020 /* FunctionSetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB6E1AF7526C00225020 /* FunctionSetingViewController.xib */; };
+		7500AB7F1AF7526C00225020 /* HelpAndFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB701AF7526C00225020 /* HelpAndFeedbackViewController.m */; };
+		7500AB801AF7526C00225020 /* HelpAndFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB711AF7526C00225020 /* HelpAndFeedbackViewController.xib */; };
+		7500AB811AF7526C00225020 /* PermissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB731AF7526C00225020 /* PermissionViewController.m */; };
+		7500AB821AF7526C00225020 /* PermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB741AF7526C00225020 /* PermissionViewController.xib */; };
+		7500AB831AF7526C00225020 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB761AF7526C00225020 /* SettingVC.m */; };
+		7500AB841AF7526C00225020 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB771AF7526C00225020 /* SettingVC.xib */; };
+		7500AB851AF7526C00225020 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB791AF7526C00225020 /* UserInfoViewController.m */; };
+		7500AB861AF7526C00225020 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB7A1AF7526C00225020 /* UserInfoViewController.xib */; };
+		7500AB8D1AF7531400225020 /* CTAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB891AF7531400225020 /* CTAssetsPickerController.m */; };
+		7500AB8E1AF7531500225020 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB8A1AF7531400225020 /* Images.xcassets */; };
+		7500AB8F1AF7531500225020 /* NSDate+TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB8C1AF7531400225020 /* NSDate+TimeInterval.m */; };
 		7528AFD61AE73E2C00250D08 /* AppListAllRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFCF1AE73E2C00250D08 /* AppListAllRequest.m */; };
 		7528AFD71AE73E2C00250D08 /* AppListInstalledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFD11AE73E2C00250D08 /* AppListInstalledRequest.m */; };
 		7528AFD81AE73E2C00250D08 /* ApplistUnInstalledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFD31AE73E2C00250D08 /* ApplistUnInstalledRequest.m */; };
@@ -25,8 +40,6 @@
 		7528AFFC1AE73E9A00250D08 /* AppListUnInstalled.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7528AFED1AE73E9A00250D08 /* AppListUnInstalled.xib */; };
 		7528AFFD1AE73E9A00250D08 /* AppListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFEF1AE73E9A00250D08 /* AppListVC.m */; };
 		7528AFFE1AE73E9A00250D08 /* AppListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7528AFF01AE73E9A00250D08 /* AppListVC.xib */; };
-		7528AFFF1AE73E9A00250D08 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFF31AE73E9A00250D08 /* SettingVC.m */; };
-		7528B0001AE73E9A00250D08 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7528AFF41AE73E9A00250D08 /* SettingVC.xib */; };
 		7528B0031AE7767700250D08 /* UserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528B0021AE7767700250D08 /* UserInfoRequest.m */; };
 		7528B0071AE77C4000250D08 /* AppListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528B0051AE77C4000250D08 /* AppListCell.m */; };
 		7528B0081AE77C4000250D08 /* AppListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7528B0061AE77C4000250D08 /* AppListCell.xib */; };
@@ -125,6 +138,29 @@
 		230F271E6F81F5E57D512406 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7500AB661AF748E500225020 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		7500AB671AF748E500225020 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		7500AB691AF7526C00225020 /* AboutSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutSetingViewController.h; sourceTree = "<group>"; };
+		7500AB6A1AF7526C00225020 /* AboutSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutSetingViewController.m; sourceTree = "<group>"; };
+		7500AB6B1AF7526C00225020 /* AboutSetingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSetingViewController.xib; sourceTree = "<group>"; };
+		7500AB6C1AF7526C00225020 /* FunctionSetingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionSetingViewController.h; sourceTree = "<group>"; };
+		7500AB6D1AF7526C00225020 /* FunctionSetingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionSetingViewController.m; sourceTree = "<group>"; };
+		7500AB6E1AF7526C00225020 /* FunctionSetingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionSetingViewController.xib; sourceTree = "<group>"; };
+		7500AB6F1AF7526C00225020 /* HelpAndFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpAndFeedbackViewController.h; sourceTree = "<group>"; };
+		7500AB701AF7526C00225020 /* HelpAndFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpAndFeedbackViewController.m; sourceTree = "<group>"; };
+		7500AB711AF7526C00225020 /* HelpAndFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpAndFeedbackViewController.xib; sourceTree = "<group>"; };
+		7500AB721AF7526C00225020 /* PermissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionViewController.h; sourceTree = "<group>"; };
+		7500AB731AF7526C00225020 /* PermissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionViewController.m; sourceTree = "<group>"; };
+		7500AB741AF7526C00225020 /* PermissionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PermissionViewController.xib; sourceTree = "<group>"; };
+		7500AB751AF7526C00225020 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		7500AB761AF7526C00225020 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		7500AB771AF7526C00225020 /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		7500AB781AF7526C00225020 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		7500AB791AF7526C00225020 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		7500AB7A1AF7526C00225020 /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
+		7500AB881AF7531400225020 /* CTAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAssetsPickerController.h; sourceTree = "<group>"; };
+		7500AB891AF7531400225020 /* CTAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetsPickerController.m; sourceTree = "<group>"; };
+		7500AB8A1AF7531400225020 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7500AB8B1AF7531400225020 /* NSDate+TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeInterval.h"; sourceTree = "<group>"; };
+		7500AB8C1AF7531400225020 /* NSDate+TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeInterval.m"; sourceTree = "<group>"; };
 		7528AFCE1AE73E2C00250D08 /* AppListAllRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListAllRequest.h; sourceTree = "<group>"; };
 		7528AFCF1AE73E2C00250D08 /* AppListAllRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListAllRequest.m; sourceTree = "<group>"; };
 		7528AFD01AE73E2C00250D08 /* AppListInstalledRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListInstalledRequest.h; sourceTree = "<group>"; };
@@ -151,9 +187,6 @@
 		7528AFEE1AE73E9A00250D08 /* AppListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListVC.h; sourceTree = "<group>"; };
 		7528AFEF1AE73E9A00250D08 /* AppListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListVC.m; sourceTree = "<group>"; };
 		7528AFF01AE73E9A00250D08 /* AppListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppListVC.xib; sourceTree = "<group>"; };
-		7528AFF21AE73E9A00250D08 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
-		7528AFF31AE73E9A00250D08 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
-		7528AFF41AE73E9A00250D08 /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
 		7528B0011AE7767700250D08 /* UserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoRequest.h; sourceTree = "<group>"; };
 		7528B0021AE7767700250D08 /* UserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoRequest.m; sourceTree = "<group>"; };
 		7528B0041AE77C4000250D08 /* AppListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListCell.h; sourceTree = "<group>"; };
@@ -336,6 +369,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7500AB871AF7531400225020 /* CTAssetsPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				7500AB881AF7531400225020 /* CTAssetsPickerController.h */,
+				7500AB891AF7531400225020 /* CTAssetsPickerController.m */,
+				7500AB8A1AF7531400225020 /* Images.xcassets */,
+				7500AB8B1AF7531400225020 /* NSDate+TimeInterval.h */,
+				7500AB8C1AF7531400225020 /* NSDate+TimeInterval.m */,
+			);
+			path = CTAssetsPickerController;
+			sourceTree = "<group>";
+		};
 		7528AFE01AE73E9A00250D08 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,9 +421,24 @@
 		7528AFF11AE73E9A00250D08 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				7528AFF21AE73E9A00250D08 /* SettingVC.h */,
-				7528AFF31AE73E9A00250D08 /* SettingVC.m */,
-				7528AFF41AE73E9A00250D08 /* SettingVC.xib */,
+				7500AB691AF7526C00225020 /* AboutSetingViewController.h */,
+				7500AB6A1AF7526C00225020 /* AboutSetingViewController.m */,
+				7500AB6B1AF7526C00225020 /* AboutSetingViewController.xib */,
+				7500AB6C1AF7526C00225020 /* FunctionSetingViewController.h */,
+				7500AB6D1AF7526C00225020 /* FunctionSetingViewController.m */,
+				7500AB6E1AF7526C00225020 /* FunctionSetingViewController.xib */,
+				7500AB6F1AF7526C00225020 /* HelpAndFeedbackViewController.h */,
+				7500AB701AF7526C00225020 /* HelpAndFeedbackViewController.m */,
+				7500AB711AF7526C00225020 /* HelpAndFeedbackViewController.xib */,
+				7500AB721AF7526C00225020 /* PermissionViewController.h */,
+				7500AB731AF7526C00225020 /* PermissionViewController.m */,
+				7500AB741AF7526C00225020 /* PermissionViewController.xib */,
+				7500AB751AF7526C00225020 /* SettingVC.h */,
+				7500AB761AF7526C00225020 /* SettingVC.m */,
+				7500AB771AF7526C00225020 /* SettingVC.xib */,
+				7500AB781AF7526C00225020 /* UserInfoViewController.h */,
+				7500AB791AF7526C00225020 /* UserInfoViewController.m */,
+				7500AB7A1AF7526C00225020 /* UserInfoViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -812,6 +872,7 @@
 		75FB5C2F1ADE373700267D03 /* Helps */ = {
 			isa = PBXGroup;
 			children = (
+				7500AB871AF7531400225020 /* CTAssetsPickerController */,
 				75F3B7011AE9E3D000E65A2E /* LBFrameworks */,
 				75EDC9EE1ADFA99900D5A069 /* SlideMenu */,
 				75FB5C451ADE50AF00267D03 /* GTMBase64 */,
@@ -1027,19 +1088,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7500AB7E1AF7526C00225020 /* FunctionSetingViewController.xib in Resources */,
 				185FD1821AE64D6500A19BDE /* LoginVC.xib in Resources */,
+				7500AB841AF7526C00225020 /* SettingVC.xib in Resources */,
 				7528AFFA1AE73E9A00250D08 /* AppListInstalled.xib in Resources */,
 				7528B0081AE77C4000250D08 /* AppListCell.xib in Resources */,
 				7528AFFC1AE73E9A00250D08 /* AppListUnInstalled.xib in Resources */,
 				75F7AAE61AF22295004743FC /* AppDetailsImageShowCell.xib in Resources */,
-				7528B0001AE73E9A00250D08 /* SettingVC.xib in Resources */,
 				75EDCA051ADFA99900D5A069 /* menu-button.png in Resources */,
 				75FB5C101ADE2CDE00267D03 /* Main.storyboard in Resources */,
+				7500AB8E1AF7531500225020 /* Images.xcassets in Resources */,
 				7528AFFE1AE73E9A00250D08 /* AppListVC.xib in Resources */,
 				75FB5C151ADE2CDE00267D03 /* LaunchScreen.xib in Resources */,
+				7500AB801AF7526C00225020 /* HelpAndFeedbackViewController.xib in Resources */,
+				7500AB821AF7526C00225020 /* PermissionViewController.xib in Resources */,
 				757F9C351AF0D15100A6894D /* Localizable.strings in Resources */,
+				7500AB7C1AF7526C00225020 /* AboutSetingViewController.xib in Resources */,
 				757F9C441AF0D90400A6894D /* HomeCollectionViewCell.xib in Resources */,
 				75EDCA061ADFA99900D5A069 /* menu-button@2x.png in Resources */,
+				7500AB861AF7526C00225020 /* UserInfoViewController.xib in Resources */,
 				75FB5C121ADE2CDE00267D03 /* Images.xcassets in Resources */,
 				7528AFF81AE73E9A00250D08 /* ApplistAll.xib in Resources */,
 			);
@@ -1093,20 +1160,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7528AFD91AE73E2C00250D08 /* AppDetailRequest.m in Sources */,
+				7500AB7F1AF7526C00225020 /* HelpAndFeedbackViewController.m in Sources */,
 				7528AFF51AE73E9A00250D08 /* AppDetailVC.m in Sources */,
 				75F6B6F61AE4D5480071EBDE /* BaseModel.m in Sources */,
 				757F9C431AF0D90400A6894D /* HomeCollectionViewCell.m in Sources */,
 				75F3B7651AE9E3D000E65A2E /* ScrollView3.m in Sources */,
 				75F3B7641AE9E3D000E65A2E /* ScrollImageView.m in Sources */,
+				7500AB7D1AF7526C00225020 /* FunctionSetingViewController.m in Sources */,
 				7528AFF71AE73E9A00250D08 /* ApplistAll.m in Sources */,
 				75F3B75D1AE9E3D000E65A2E /* NQFinder.m in Sources */,
 				75F3B76E1AE9E3D000E65A2E /* tools.m in Sources */,
 				75FB5C631ADE50AF00267D03 /* Reachability.m in Sources */,
 				75F3B76B1AE9E3D000E65A2E /* PopoverView.m in Sources */,
 				75F3B7581AE9E3D000E65A2E /* DrawView.m in Sources */,
+				7500AB8F1AF7531500225020 /* NSDate+TimeInterval.m in Sources */,
 				75F3B75E1AE9E3D000E65A2E /* dotView.m in Sources */,
 				7528AFDF1AE73E6200250D08 /* UserModel.m in Sources */,
 				75EDCA021ADFA99900D5A069 /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,
+				7500AB851AF7526C00225020 /* UserInfoViewController.m in Sources */,
 				75F6B6ED1AE4CFC30071EBDE /* RequestURL.m in Sources */,
 				75F3B75C1AE9E3D000E65A2E /* LBFinder.m in Sources */,
 				75EDCA001ADFA99900D5A069 /* SlideNavigationContorllerAnimatorFade.m in Sources */,
@@ -1116,7 +1187,6 @@
 				75FB5C621ADE50AF00267D03 /* SBJsonWriter.m in Sources */,
 				75F3B7741AEA1F4D00E65A2E /* ViewController.m in Sources */,
 				75EDCA071ADFA99900D5A069 /* SlideNavigationController.m in Sources */,
-				7528AFFF1AE73E9A00250D08 /* SettingVC.m in Sources */,
 				75F3B7601AE9E3D000E65A2E /* LBLoadingView.m in Sources */,
 				75FB5C5F1ADE50AF00267D03 /* NSString+SBJSON.m in Sources */,
 				75F3B76D1AE9E3D000E65A2E /* UITextField_custom.m in Sources */,
@@ -1152,9 +1222,11 @@
 				75F3B76C1AE9E3D000E65A2E /* NQSave.m in Sources */,
 				757F9C3E1AF0D88100A6894D /* HomeViewController.m in Sources */,
 				75F3B75B1AE9E3D000E65A2E /* SelectViewItemTextView.m in Sources */,
+				7500AB811AF7526C00225020 /* PermissionViewController.m in Sources */,
 				7528AFFB1AE73E9A00250D08 /* AppListUnInstalled.m in Sources */,
 				75FB5C071ADE2CDE00267D03 /* main.m in Sources */,
 				75FB5C5D1ADE50AF00267D03 /* JSONKit.m in Sources */,
+				7500AB831AF7526C00225020 /* SettingVC.m in Sources */,
 				7500AB681AF748E500225020 /* BaseTableViewCell.m in Sources */,
 				75F6B6EC1AE4CFC30071EBDE /* BaseRequest.m in Sources */,
 				75F3B7551AE9E3D000E65A2E /* coinAnimationView.m in Sources */,
@@ -1171,6 +1243,8 @@
 				75F3B7561AE9E3D000E65A2E /* drawCircle.m in Sources */,
 				75F3B75F1AE9E3D000E65A2E /* LBDotLoadingView.m in Sources */,
 				75F3B7681AE9E3D000E65A2E /* NSDate+Utilities.m in Sources */,
+				7500AB7B1AF7526C00225020 /* AboutSetingViewController.m in Sources */,
+				7500AB8D1AF7531400225020 /* CTAssetsPickerController.m in Sources */,
 				75F7AAE11AF1FBC3004743FC /* AppStoreVC.m in Sources */,
 				75F7AAE51AF22295004743FC /* AppDetailsImageShowCell.m in Sources */,
 			);

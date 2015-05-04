@@ -65,11 +65,9 @@
         self.cellNib = [UINib nibWithNibName:@"AppListCell" bundle:nil];
         [self.tableView registerNib:self.cellNib forCellReuseIdentifier:self.cellIdentifier];
     }
-    AppListCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
     
-    AppModel *model = self.items[indexPath.row];
-    cell.name = model.title;
-    [cell.icon sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:nil];
+
     return cell;
 }
 
@@ -86,6 +84,7 @@
         default:
             break;
     }
+    return 0;
 }
 
 
