@@ -35,7 +35,7 @@ static NSString *HomeCollectionViewCellIdentifier = @"HomeCollectionViewCellIden
     _HeadPortrait.layer.cornerRadius = _HeadPortrait.frame.size.width/2;
     _HeadPortrait.layer.masksToBounds = YES;
 
-    
+
     self.view.backgroundColor = [UIColor colorWithWhite:0.4 alpha:0.4];
     
     UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc] init];
@@ -65,6 +65,12 @@ static NSString *HomeCollectionViewCellIdentifier = @"HomeCollectionViewCellIden
 
 /* 显示用户信息 */
 - (void)showUserInfo:(UserModel *)user{
+
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden=YES;
 
 }
 

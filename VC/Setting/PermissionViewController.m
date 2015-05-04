@@ -1,32 +1,23 @@
 //
-//  ViewController.m
+//  PermissionViewController.m
 //  SecCom
 //
-//  Created by libo on 4/24/15.
-//  Copyright (c) 2015 LB. All rights reserved.
+//  Created by duanran on 15/5/4.
+//  Copyright (c) 2015年 LB. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "LBTabBarController.h"
+#import "PermissionViewController.h"
 
-@interface ViewController ()
+@interface PermissionViewController ()
 
 @end
 
-@implementation ViewController
+@implementation PermissionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    LBTabBarController *tabBarVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"LBTabBarController"];
-    
-    [self.navigationController pushViewController:tabBarVC animated:NO];
-
-    
-    
-
+    self.title=self.titleName;
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -42,6 +33,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
+*/
 
 @end
