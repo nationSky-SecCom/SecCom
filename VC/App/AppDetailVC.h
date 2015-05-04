@@ -6,16 +6,15 @@
 //  Copyright (c) 2015 LB. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseTableViewController.h"
 #import "UserModel.h"
 #import "AppModel.h"
 
-@interface AppDetailVC : BaseViewController
+@interface AppDetailVC : BaseTableViewController
 
 @property (nonatomic, strong) AppModel *appModel;
 
-@property (strong, nonatomic) IBOutlet UIImageView *icon;
-@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+
 
 
 @end

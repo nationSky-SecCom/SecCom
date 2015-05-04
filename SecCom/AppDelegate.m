@@ -18,7 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-
+//    LBTabBarController *tabBar = [[LBTabBarController alloc] init];
+//    UINavigationController *navTabBar = [[UINavigationController alloc] initWithRootViewController:tabBar];
+//    self.window.rootViewController = navTabBar;
     
     return YES;
 }

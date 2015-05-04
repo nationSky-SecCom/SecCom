@@ -12,6 +12,8 @@
 
 @interface AppDetailVC ()
 
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation AppDetailVC
@@ -20,7 +22,6 @@
     [super viewDidLoad];
 
     self.title = @"应用详情";
-    _nameLabel.text = _appModel.title;
     
     AppDetailRequest *request = [[AppDetailRequest alloc] init];
 
@@ -49,14 +50,50 @@
 
 /* 显示app详细信息 */
 - (void)setAppInfo:(AppModel *)app{
-    _nameLabel.text = app.title;
-    [_icon sd_setImageWithURL:[NSURL URLWithString:app.icon]];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark ----- UITableViewDataSource -----
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (!self.cellNib) {
+        self.cellNib = [UINib nibWithNibName:@"AppListCell" bundle:nil];
+        [self.tableView registerNib:self.cellNib forCellReuseIdentifier:self.cellIdentifier];
+    }
+    AppListCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+    
+    AppModel *model = self.items[indexPath.row];
+    cell.name = model.title;
+    [cell.icon sd_setImageWithURL:[NSURL URLWithString:model.icon] placeholderImage:nil];
+    return cell;
+}
+
+#pragma mark ----- UITableViewDelegate -----
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+            return 70;
+            break;
+        case 1:
+            return 400;
+            break;
+            
+        default:
+            break;
+    }
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+}
+
+
 
 /*
 #pragma mark - Navigation

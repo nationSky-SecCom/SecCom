@@ -7,6 +7,11 @@
 //
 
 #import "LBTabBarController.h"
+#import "HomeViewController.h"
+#import "AppStoreVC.h"
+#import "SettingVC.h"
+#import "LBTabBar.h"
+#import "RDVTabBarItem.h"
 
 @interface LBTabBarController ()
 
@@ -16,8 +21,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.hidesBackButton = YES;
+//    self.navigationItem.hidesBackButton = YES;
     
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    HomeViewController *home = [mainStoryboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+    UINavigationController *navHome = [[UINavigationController alloc] initWithRootViewController:home];
+    
+    AppStoreVC *appStore = [mainStoryboard instantiateViewControllerWithIdentifier:@"AppStoreVC"];
+    UINavigationController *navAppStore = [[UINavigationController alloc] initWithRootViewController:appStore];
+    
+    SettingVC *setting = [[SettingVC alloc] initWithNibName:@"SettingVC" bundle:nil];
+    UINavigationController *navSetting = [[UINavigationController alloc] initWithRootViewController:setting];
+    
+    [self setViewControllers:@[navHome,navAppStore,navSetting]];
+    
+    
+    UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
+    UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
+    NSArray *tabBarItemImages = @[@"first", @"second", @"third"];
+    NSArray *tabBarTitle = @[NSLocalizedString(@"Home", @"主页"),
+                             NSLocalizedString(@"appStore", @"应用商店"),
+                             NSLocalizedString(@"setting", @"设置")];
+    
+
+    [self.tabBar setFrame:CGRectMake(CGRectGetMinX(self.tabBar.frame), CGRectGetMinY(self.tabBar.frame), CGRectGetWidth(self.tabBar.frame), 63)];
+    NSInteger index = 0;
+    for (RDVTabBarItem *item in self.tabBar.items) {
+
+        [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
+        UIImage *selectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_selected",
+                                                      [tabBarItemImages objectAtIndex:index]]];
+        UIImage *unselectedimage = [UIImage imageNamed:[NSString stringWithFormat:@"%@_normal",
+                                                        [tabBarItemImages objectAtIndex:index]]];
+        [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
+        [item setTitle:[tabBarTitle objectAtIndex:index]];
+        
+        index++;
+    }
     
 }
 

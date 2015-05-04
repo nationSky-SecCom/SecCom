@@ -22,9 +22,14 @@ static NSString *HomeCollectionViewCellIdentifier = @"HomeCollectionViewCellIden
 
 @implementation HomeViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
+
     
     self.HeadPortrait.backgroundColor = [UIColor redColor];
     _HeadPortrait.layer.cornerRadius = _HeadPortrait.frame.size.width/2;
@@ -78,6 +83,19 @@ static NSString *HomeCollectionViewCellIdentifier = @"HomeCollectionViewCellIden
 
     cell.backgroundColor = [UIColor blueColor];
     return cell;
+}
+
+#pragma mark ----- UICollectionViewDelegate -----
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:hud];
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = @"打开应用";
+    [hud showAnimated:YES whileExecutingBlock:^{
+        sleep(3);
+    } completionBlock:^{
+        [hud removeFromSuperview];
+    }];
 }
 
 

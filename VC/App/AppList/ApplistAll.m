@@ -15,8 +15,15 @@
 
 @implementation ApplistAll
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = NSLocalizedString(@"appStore", @"应用商店");
 
     self.tableView.tableFooterView=[[UIView alloc]init];
 }
@@ -57,6 +64,9 @@
         NSLog(@"%@",errorMessage);
     }];
 }
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

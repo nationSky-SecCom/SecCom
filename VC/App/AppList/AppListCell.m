@@ -20,4 +20,23 @@
     // Configure the view for the selected state
 }
 
+- (void)setName:(NSString *)name{
+    _nameLabel.text = name;
+}
+
+- (void)setTime:(NSString *)time{
+    _timeLabel.text = time;
+}
+
+- (void)setClassName:(NSString *)className{
+    _classLabel.text = className;
+}
+
+- (IBAction)buttonAction:(UIButton *)sender {
+}
+
+
+
+
+
 @end

@@ -13,11 +13,5 @@
 
 
 
-//- (void)drawRect:(CGRect)rect {
-//    UITabBarItem *item0 = self.items[0];
-//    item0.title = NSLocalizedString(@"Home", nil);
-//}
-
-
 
 @end
