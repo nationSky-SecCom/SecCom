@@ -23,8 +23,6 @@
     LBTabBarController *tabBarVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"LBTabBarController"];
     
     [self.navigationController pushViewController:tabBarVC animated:NO];
-
-    
     
 
 }
