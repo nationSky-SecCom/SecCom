@@ -26,6 +26,7 @@
                           Number(UrlTypeApplistUnInstall)           :     @"",
                           Number(UrlTypeAppDetails)                 :     @"mam/v1/appdetail",
                           Number(UrlTypeUserInfo)                   :     @"",
+//                          Number(URLTypeActiveDevice)               :     @"mam/v1/userauth",
                          };
     }
     NSString *urlString = [urlDictionary objectForKey:Number(urltype)];
