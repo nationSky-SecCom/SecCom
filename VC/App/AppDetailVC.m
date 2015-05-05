@@ -30,6 +30,9 @@
     
     AppDetailRequest *request = [[AppDetailRequest alloc] init];
 
+    if (!self.appModel.appId) {
+        return;
+    }
     request.parameters = @{
                            @"request":@{
                                @"operId":@{

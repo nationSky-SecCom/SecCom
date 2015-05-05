@@ -11,5 +11,5 @@
 
 @interface LBTabBarController : RDVTabBarController
 
-
+- (void)sethidden;
 @end

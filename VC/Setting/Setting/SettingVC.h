@@ -10,4 +10,9 @@
 
 @interface SettingVC : BaseViewController
 
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+
+
 @end

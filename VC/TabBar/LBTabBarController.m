@@ -31,7 +31,8 @@
     AppStoreVC *appStore = [mainStoryboard instantiateViewControllerWithIdentifier:@"AppStoreVC"];
     UINavigationController *navAppStore = [[UINavigationController alloc] initWithRootViewController:appStore];
     
-    SettingVC *setting = [[SettingVC alloc] initWithNibName:@"SettingVC" bundle:nil];
+//    SettingVC *setting = [[SettingVC alloc] initWithNibName:@"SettingVC" bundle:nil];
+    SettingVC *setting = [mainStoryboard instantiateViewControllerWithIdentifier:@"SettingVC"];
     UINavigationController *navSetting = [[UINavigationController alloc] initWithRootViewController:setting];
     
     [self setViewControllers:@[navHome,navAppStore,navSetting]];
@@ -59,7 +60,7 @@
         
         index++;
     }
-    
+
 }
 
 - (void)didReceiveMemoryWarning {

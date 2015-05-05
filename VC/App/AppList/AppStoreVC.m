@@ -11,11 +11,17 @@
 #import "AppListCell.h"
 #import "SDWebImage/UIImageView+WebCache.h"
 
+
 @interface AppStoreVC ()
 
 @end
 
 @implementation AppStoreVC
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -92,6 +98,7 @@
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     AppDetailVC *detail = [mainStoryboard instantiateViewControllerWithIdentifier:@"AppDetailVC"];
     detail.appModel = self.items[indexPath.row];
+    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
     [self.navigationController pushViewController:detail animated:YES];
 }
 

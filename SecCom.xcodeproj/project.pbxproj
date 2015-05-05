@@ -18,13 +18,17 @@
 		7500AB801AF7526C00225020 /* HelpAndFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB711AF7526C00225020 /* HelpAndFeedbackViewController.xib */; };
 		7500AB811AF7526C00225020 /* PermissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB731AF7526C00225020 /* PermissionViewController.m */; };
 		7500AB821AF7526C00225020 /* PermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB741AF7526C00225020 /* PermissionViewController.xib */; };
-		7500AB831AF7526C00225020 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB761AF7526C00225020 /* SettingVC.m */; };
-		7500AB841AF7526C00225020 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB771AF7526C00225020 /* SettingVC.xib */; };
 		7500AB851AF7526C00225020 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB791AF7526C00225020 /* UserInfoViewController.m */; };
 		7500AB861AF7526C00225020 /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB7A1AF7526C00225020 /* UserInfoViewController.xib */; };
 		7500AB8D1AF7531400225020 /* CTAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB891AF7531400225020 /* CTAssetsPickerController.m */; };
 		7500AB8E1AF7531500225020 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB8A1AF7531400225020 /* Images.xcassets */; };
 		7500AB8F1AF7531500225020 /* NSDate+TimeInterval.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB8C1AF7531400225020 /* NSDate+TimeInterval.m */; };
+		7500ABB51AF7767500225020 /* SettingHeaderCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500ABAA1AF7767500225020 /* SettingHeaderCellTableViewCell.m */; };
+		7500ABB61AF7767500225020 /* SettingHeaderCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500ABAB1AF7767500225020 /* SettingHeaderCellTableViewCell.xib */; };
+		7500ABB71AF7767500225020 /* SettingSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500ABAD1AF7767500225020 /* SettingSwitchCell.m */; };
+		7500ABB81AF7767500225020 /* SettingSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500ABAE1AF7767500225020 /* SettingSwitchCell.xib */; };
+		7500ABBB1AF7767500225020 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500ABB31AF7767500225020 /* SettingVC.m */; };
+		7500ABBC1AF7767500225020 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500ABB41AF7767500225020 /* SettingVC.xib */; };
 		7528AFD61AE73E2C00250D08 /* AppListAllRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFCF1AE73E2C00250D08 /* AppListAllRequest.m */; };
 		7528AFD71AE73E2C00250D08 /* AppListInstalledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFD11AE73E2C00250D08 /* AppListInstalledRequest.m */; };
 		7528AFD81AE73E2C00250D08 /* ApplistUnInstalledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7528AFD31AE73E2C00250D08 /* ApplistUnInstalledRequest.m */; };
@@ -150,9 +154,6 @@
 		7500AB721AF7526C00225020 /* PermissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionViewController.h; sourceTree = "<group>"; };
 		7500AB731AF7526C00225020 /* PermissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionViewController.m; sourceTree = "<group>"; };
 		7500AB741AF7526C00225020 /* PermissionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PermissionViewController.xib; sourceTree = "<group>"; };
-		7500AB751AF7526C00225020 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
-		7500AB761AF7526C00225020 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
-		7500AB771AF7526C00225020 /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
 		7500AB781AF7526C00225020 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		7500AB791AF7526C00225020 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		7500AB7A1AF7526C00225020 /* UserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
@@ -161,6 +162,15 @@
 		7500AB8A1AF7531400225020 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7500AB8B1AF7531400225020 /* NSDate+TimeInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeInterval.h"; sourceTree = "<group>"; };
 		7500AB8C1AF7531400225020 /* NSDate+TimeInterval.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeInterval.m"; sourceTree = "<group>"; };
+		7500ABA91AF7767500225020 /* SettingHeaderCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingHeaderCellTableViewCell.h; sourceTree = "<group>"; };
+		7500ABAA1AF7767500225020 /* SettingHeaderCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingHeaderCellTableViewCell.m; sourceTree = "<group>"; };
+		7500ABAB1AF7767500225020 /* SettingHeaderCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderCellTableViewCell.xib; sourceTree = "<group>"; };
+		7500ABAC1AF7767500225020 /* SettingSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSwitchCell.h; sourceTree = "<group>"; };
+		7500ABAD1AF7767500225020 /* SettingSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingSwitchCell.m; sourceTree = "<group>"; };
+		7500ABAE1AF7767500225020 /* SettingSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSwitchCell.xib; sourceTree = "<group>"; };
+		7500ABB21AF7767500225020 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		7500ABB31AF7767500225020 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		7500ABB41AF7767500225020 /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
 		7528AFCE1AE73E2C00250D08 /* AppListAllRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListAllRequest.h; sourceTree = "<group>"; };
 		7528AFCF1AE73E2C00250D08 /* AppListAllRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppListAllRequest.m; sourceTree = "<group>"; };
 		7528AFD01AE73E2C00250D08 /* AppListInstalledRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppListInstalledRequest.h; sourceTree = "<group>"; };
@@ -381,6 +391,22 @@
 			path = CTAssetsPickerController;
 			sourceTree = "<group>";
 		};
+		7500ABA81AF7767500225020 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				7500ABA91AF7767500225020 /* SettingHeaderCellTableViewCell.h */,
+				7500ABAA1AF7767500225020 /* SettingHeaderCellTableViewCell.m */,
+				7500ABAB1AF7767500225020 /* SettingHeaderCellTableViewCell.xib */,
+				7500ABAC1AF7767500225020 /* SettingSwitchCell.h */,
+				7500ABAD1AF7767500225020 /* SettingSwitchCell.m */,
+				7500ABAE1AF7767500225020 /* SettingSwitchCell.xib */,
+				7500ABB21AF7767500225020 /* SettingVC.h */,
+				7500ABB31AF7767500225020 /* SettingVC.m */,
+				7500ABB41AF7767500225020 /* SettingVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		7528AFE01AE73E9A00250D08 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +447,7 @@
 		7528AFF11AE73E9A00250D08 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				7500ABA81AF7767500225020 /* Setting */,
 				7500AB691AF7526C00225020 /* AboutSetingViewController.h */,
 				7500AB6A1AF7526C00225020 /* AboutSetingViewController.m */,
 				7500AB6B1AF7526C00225020 /* AboutSetingViewController.xib */,
@@ -433,9 +460,6 @@
 				7500AB721AF7526C00225020 /* PermissionViewController.h */,
 				7500AB731AF7526C00225020 /* PermissionViewController.m */,
 				7500AB741AF7526C00225020 /* PermissionViewController.xib */,
-				7500AB751AF7526C00225020 /* SettingVC.h */,
-				7500AB761AF7526C00225020 /* SettingVC.m */,
-				7500AB771AF7526C00225020 /* SettingVC.xib */,
 				7500AB781AF7526C00225020 /* UserInfoViewController.h */,
 				7500AB791AF7526C00225020 /* UserInfoViewController.m */,
 				7500AB7A1AF7526C00225020 /* UserInfoViewController.xib */,
@@ -1089,11 +1113,12 @@
 			files = (
 				7500AB7E1AF7526C00225020 /* FunctionSetingViewController.xib in Resources */,
 				185FD1821AE64D6500A19BDE /* LoginVC.xib in Resources */,
-				7500AB841AF7526C00225020 /* SettingVC.xib in Resources */,
+				7500ABBC1AF7767500225020 /* SettingVC.xib in Resources */,
 				7528AFFA1AE73E9A00250D08 /* AppListInstalled.xib in Resources */,
 				7528B0081AE77C4000250D08 /* AppListCell.xib in Resources */,
 				7528AFFC1AE73E9A00250D08 /* AppListUnInstalled.xib in Resources */,
 				75F7AAE61AF22295004743FC /* AppDetailsImageShowCell.xib in Resources */,
+				7500ABB81AF7767500225020 /* SettingSwitchCell.xib in Resources */,
 				75EDCA051ADFA99900D5A069 /* menu-button.png in Resources */,
 				75FB5C101ADE2CDE00267D03 /* Main.storyboard in Resources */,
 				7500AB8E1AF7531500225020 /* Images.xcassets in Resources */,
@@ -1105,6 +1130,7 @@
 				7500AB7C1AF7526C00225020 /* AboutSetingViewController.xib in Resources */,
 				757F9C441AF0D90400A6894D /* HomeCollectionViewCell.xib in Resources */,
 				75EDCA061ADFA99900D5A069 /* menu-button@2x.png in Resources */,
+				7500ABB61AF7767500225020 /* SettingHeaderCellTableViewCell.xib in Resources */,
 				7500AB861AF7526C00225020 /* UserInfoViewController.xib in Resources */,
 				75FB5C121ADE2CDE00267D03 /* Images.xcassets in Resources */,
 				7528AFF81AE73E9A00250D08 /* ApplistAll.xib in Resources */,
@@ -1210,6 +1236,7 @@
 				7528AFF91AE73E9A00250D08 /* AppListInstalled.m in Sources */,
 				7528AFD81AE73E2C00250D08 /* ApplistUnInstalledRequest.m in Sources */,
 				7528B0031AE7767700250D08 /* UserInfoRequest.m in Sources */,
+				7500ABBB1AF7767500225020 /* SettingVC.m in Sources */,
 				75F553E11AEE02C200771953 /* imageUrlModel.m in Sources */,
 				75F3B7621AE9E3D000E65A2E /* LBProgressView.m in Sources */,
 				75F3B75A1AE9E3D000E65A2E /* SelectViewItem.m in Sources */,
@@ -1221,17 +1248,18 @@
 				75F3B76C1AE9E3D000E65A2E /* NQSave.m in Sources */,
 				757F9C3E1AF0D88100A6894D /* HomeViewController.m in Sources */,
 				75F3B75B1AE9E3D000E65A2E /* SelectViewItemTextView.m in Sources */,
+				7500ABB51AF7767500225020 /* SettingHeaderCellTableViewCell.m in Sources */,
 				7500AB811AF7526C00225020 /* PermissionViewController.m in Sources */,
 				7528AFFB1AE73E9A00250D08 /* AppListUnInstalled.m in Sources */,
 				75FB5C071ADE2CDE00267D03 /* main.m in Sources */,
 				75FB5C5D1ADE50AF00267D03 /* JSONKit.m in Sources */,
-				7500AB831AF7526C00225020 /* SettingVC.m in Sources */,
 				7500AB681AF748E500225020 /* BaseTableViewCell.m in Sources */,
 				75F6B6EC1AE4CFC30071EBDE /* BaseRequest.m in Sources */,
 				75F3B7551AE9E3D000E65A2E /* coinAnimationView.m in Sources */,
 				75F3B7701AE9E3D000E65A2E /* UILabelCenter.m in Sources */,
 				75FB5C601ADE50AF00267D03 /* SBJsonBase.m in Sources */,
 				75FB5C5E1ADE50AF00267D03 /* NSObject+SBJSON.m in Sources */,
+				7500ABB71AF7767500225020 /* SettingSwitchCell.m in Sources */,
 				75F3B76F1AE9E3D000E65A2E /* UIButton_State.m in Sources */,
 				75F3B7661AE9E3D000E65A2E /* NSArray+beyondBounds.m in Sources */,
 				75EDCA041ADFA99900D5A069 /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,

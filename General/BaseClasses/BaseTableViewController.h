@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 
-@interface BaseTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface BaseTableViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UINib *cellNib;
