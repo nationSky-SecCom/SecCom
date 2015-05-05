@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AppDetailsImageShowCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应用截图:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXL-J3-41L">
+                        <rect key="frame" x="8" y="8" width="90" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otD-Pi-l8Y">
+                        <rect key="frame" x="0.0" y="34" width="320" height="365"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hXL-J3-41L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="7rl-cW-8Pw"/>
+                    <constraint firstAttribute="centerX" secondItem="otD-Pi-l8Y" secondAttribute="centerX" id="CjX-Ls-iGe"/>
+                    <constraint firstItem="hXL-J3-41L" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="RvW-0c-osn"/>
+                    <constraint firstAttribute="bottom" secondItem="otD-Pi-l8Y" secondAttribute="bottom" id="VbM-J3-LZW"/>
+                    <constraint firstItem="otD-Pi-l8Y" firstAttribute="top" secondItem="hXL-J3-41L" secondAttribute="bottom" constant="5" id="Ygo-p9-sk9"/>
+                    <constraint firstItem="otD-Pi-l8Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cVH-EI-xgK"/>
+                    <constraint firstAttribute="trailing" secondItem="otD-Pi-l8Y" secondAttribute="trailing" id="chQ-bH-keo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hXL-J3-41L" secondAttribute="trailing" constant="214" id="eNE-0m-U9B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scrollView" destination="otD-Pi-l8Y" id="Lqy-aN-wjr"/>
+                <outlet property="topLabel" destination="hXL-J3-41L" id="7it-Ag-2IN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

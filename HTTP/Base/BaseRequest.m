@@ -79,6 +79,7 @@
     if (self.parameters) {
         [_parameter addEntriesFromDictionary:self.parameters];
     }
+    NSLog(@"self.requestURL=%@",self.requestURL);
     self.operation = [manager POST:self.requestURL
                         parameters:_parameter
                            success:^(AFHTTPRequestOperation *operation, id responseObject) {

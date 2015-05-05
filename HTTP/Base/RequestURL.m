@@ -7,10 +7,12 @@
 //
 
 #import "RequestURL.h"
-
+//开发服务器
 #define BaseUrl @"http://192.168.1.140:8080/"
-#define Number(n) [NSNumber numberWithInteger:n]
+//田涛主机
+//#define BaseUrl @"http://192.168.7.237:8080/"
 
+#define Number(n) [NSNumber numberWithInteger:n]
 
 @implementation RequestURL
 
@@ -26,7 +28,7 @@
                           Number(UrlTypeApplistUnInstall)           :     @"",
                           Number(UrlTypeAppDetails)                 :     @"mam/v1/appdetail",
                           Number(UrlTypeUserInfo)                   :     @"",
-//                          Number(URLTypeActiveDevice)               :     @"mam/v1/userauth",
+                          Number(URLTypeActiveDevice)               :     @"mam/v2/userauth",
                          };
     }
     NSString *urlString = [urlDictionary objectForKey:Number(urltype)];

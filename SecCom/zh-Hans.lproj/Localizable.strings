@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  SecCom
+
+  Created by libo on 15/4/29.
+  Copyright (c) 2015年 LB. All rights reserved.
+*/
+
+
+"Home"                  =   "主页";
+"Setting"               =   "设置";
+"appStore"              =   "应用商店";
+"aboutInfo"             =   "关于信息";
+

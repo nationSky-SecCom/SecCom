@@ -55,6 +55,7 @@
 
 
 
+
 // 本地化字符串
 /** NSLocalizedString宏做的其实就是在当前bundle中查找资源文件名“Localizable.strings”(参数:键＋注释) */
 #define LocalString(x, ...)     NSLocalizedString(x, nil)
