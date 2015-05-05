@@ -10,6 +10,8 @@
 #import "HomeViewController.h"
 #import "ActiveDeviceRequest.h"
 #import "JSONKit.h"
+#import "DeviceInfoUtil.h"
+
 @interface LoginVC ()
 
 @end
@@ -18,7 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor grayColor];
+    self.view.backgroundColor=[UIColor whiteColor];
+    self.userNameField.placeholder=@"用户名";
+    self.userPasswordField.placeholder=@"密码";
+    self.navigationController.navigationBarHidden=YES;
     
     
 }
@@ -29,18 +34,35 @@
 -(IBAction)navi
 {
     
-    if (self.serverAddressField.text.length==0||self.userNameField.text.length==0||self.userPasswordField.text.length==0) {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"用户名、密码、服务器地址不能为空" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+    if (self.userNameField.text.length==0||self.userPasswordField.text.length==0) {
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"温馨提示" message:@"用户名或密码不能为空" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
         [alert show];
         return;
     }
     
-    NSString *deviceVersion=[[UIDevice currentDevice]systemVersion];
+
+    NSString *idfa = [DeviceInfoUtil IDFA];
+    NSString *clientOS=[DeviceInfoUtil getOS];
+    NSString *modelType=[DeviceInfoUtil getModelType];
+    NSString *jailed=[DeviceInfoUtil getJailBreakStatus];
+    NSString *wifiMac=[DeviceInfoUtil macaddress];
+    NSString *deviceName=[DeviceInfoUtil getName];
+    NSString *model=[DeviceInfoUtil getModel];
+    NSString *deviceVersion=[DeviceInfoUtil getOSVersion];
 
     
-//    NSLog(@"%f",    [[[UIDevice currentDevice]systemVersion]floatValue]);
-    
+    NSLog(@"clientOS=%@",clientOS);
+    NSLog(@"idfa=%@",idfa);
+    NSLog(@"modelType=%@",modelType);
+    NSLog(@"jailed=%@",jailed);
+    NSLog(@"wifiMac=%@",wifiMac);
+    NSLog(@"deviceName=%@",deviceName);
+    NSLog(@"model=%@",model);
+    NSLog(@"deviceVersion=%@",deviceVersion);
+
     ActiveDeviceRequest *activeRequest=[[ActiveDeviceRequest alloc]init];
+    
+    
     activeRequest.parameters=@{
                                @"request":@{
                                 @"operId":@{
@@ -73,6 +95,7 @@
         
         if (self.activeResponseDic.count>0) {
             NSString *profileUrl=[self.activeResponseDic objectForKey:@"profileUrl"];
+            NSLog(@"profileUrl=%@",profileUrl);
             [[UIApplication sharedApplication]openURL:[NSURL URLWithString:profileUrl]];
         }
         else

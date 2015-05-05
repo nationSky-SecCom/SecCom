@@ -25,6 +25,7 @@
     setExtraCellLineHidden(self.tableView);
     self.tableView.scrollEnabled=NO;
     
+    
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

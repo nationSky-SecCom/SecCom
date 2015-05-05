@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		185FD1811AE64D6500A19BDE /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 185FD17F1AE64D6500A19BDE /* LoginVC.m */; };
 		185FD1821AE64D6500A19BDE /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185FD1801AE64D6500A19BDE /* LoginVC.xib */; };
+		186F245A1AF8668A0003C82C /* DeviceInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F24591AF8668A0003C82C /* DeviceInfoUtil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		186F24F81AF8ACD40003C82C /* EditeUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186F24F61AF8ACD40003C82C /* EditeUserInfoViewController.m */; };
+		186F24F91AF8ACD40003C82C /* EditeUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186F24F71AF8ACD40003C82C /* EditeUserInfoViewController.xib */; };
 		7500AB681AF748E500225020 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB671AF748E500225020 /* BaseTableViewCell.m */; };
 		7500AB7B1AF7526C00225020 /* AboutSetingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7500AB6A1AF7526C00225020 /* AboutSetingViewController.m */; };
 		7500AB7C1AF7526C00225020 /* AboutSetingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7500AB6B1AF7526C00225020 /* AboutSetingViewController.xib */; };
@@ -141,6 +144,11 @@
 		185FD17E1AE64D6500A19BDE /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		185FD17F1AE64D6500A19BDE /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		185FD1801AE64D6500A19BDE /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		186F24581AF8668A0003C82C /* DeviceInfoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoUtil.h; sourceTree = "<group>"; };
+		186F24591AF8668A0003C82C /* DeviceInfoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoUtil.m; sourceTree = "<group>"; };
+		186F24F51AF8ACD40003C82C /* EditeUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditeUserInfoViewController.h; sourceTree = "<group>"; };
+		186F24F61AF8ACD40003C82C /* EditeUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditeUserInfoViewController.m; sourceTree = "<group>"; };
+		186F24F71AF8ACD40003C82C /* EditeUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditeUserInfoViewController.xib; sourceTree = "<group>"; };
 		1D83F6B07CDF56EEC2243FB8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		230F271E6F81F5E57D512406 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7500AB661AF748E500225020 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
@@ -468,6 +476,9 @@
 				7500AB781AF7526C00225020 /* UserInfoViewController.h */,
 				7500AB791AF7526C00225020 /* UserInfoViewController.m */,
 				7500AB7A1AF7526C00225020 /* UserInfoViewController.xib */,
+				186F24F51AF8ACD40003C82C /* EditeUserInfoViewController.h */,
+				186F24F61AF8ACD40003C82C /* EditeUserInfoViewController.m */,
+				186F24F71AF8ACD40003C82C /* EditeUserInfoViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -939,6 +950,8 @@
 		75FB5C301ADE373700267D03 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
+				186F24581AF8668A0003C82C /* DeviceInfoUtil.h */,
+				186F24591AF8668A0003C82C /* DeviceInfoUtil.m */,
 				75FB5C311ADE373700267D03 /* AppMacro.h */,
 				75FB5C321ADE373700267D03 /* NotificationMacro.h */,
 				75FB5C331ADE373700267D03 /* UtilsMacro.h */,
@@ -1147,8 +1160,13 @@
 				7528B0081AE77C4000250D08 /* AppListCell.xib in Resources */,
 				75F6AF641AF8688C00DD8B33 /* AppDetailsDescriptionCell.xib in Resources */,
 				7528AFFC1AE73E9A00250D08 /* AppListUnInstalled.xib in Resources */,
+<<<<<<< Updated upstream
 				75F6AF5E1AF867CB00DD8B33 /* AppDetailsImageShowCell.xib in Resources */,
 				7500ABB81AF7767500225020 /* SettingSwitchCell.xib in Resources */,
+=======
+				75F7AAE61AF22295004743FC /* AppDetailsImageShowCell.xib in Resources */,
+				186F24F91AF8ACD40003C82C /* EditeUserInfoViewController.xib in Resources */,
+>>>>>>> Stashed changes
 				75EDCA051ADFA99900D5A069 /* menu-button.png in Resources */,
 				75FB5C101ADE2CDE00267D03 /* Main.storyboard in Resources */,
 				7500AB8E1AF7531500225020 /* Images.xcassets in Resources */,
@@ -1223,10 +1241,12 @@
 				7500AB7D1AF7526C00225020 /* FunctionSetingViewController.m in Sources */,
 				7528AFF71AE73E9A00250D08 /* ApplistAll.m in Sources */,
 				75F3B75D1AE9E3D000E65A2E /* NQFinder.m in Sources */,
+				186F245A1AF8668A0003C82C /* DeviceInfoUtil.m in Sources */,
 				75F3B76E1AE9E3D000E65A2E /* tools.m in Sources */,
 				75FB5C631ADE50AF00267D03 /* Reachability.m in Sources */,
 				75F3B76B1AE9E3D000E65A2E /* PopoverView.m in Sources */,
 				75F3B7581AE9E3D000E65A2E /* DrawView.m in Sources */,
+				186F24F81AF8ACD40003C82C /* EditeUserInfoViewController.m in Sources */,
 				7500AB8F1AF7531500225020 /* NSDate+TimeInterval.m in Sources */,
 				75F3B75E1AE9E3D000E65A2E /* dotView.m in Sources */,
 				7528AFDF1AE73E6200250D08 /* UserModel.m in Sources */,
@@ -1420,8 +1440,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: bin song (KM824SSE4J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: bin song (KM824SSE4J)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Nation Sky Network Technology Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing Nation Sky Network Technology Co.,Ltd";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1461,8 +1481,8 @@
 			baseConfigurationReference = 1D83F6B07CDF56EEC2243FB8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: bin song (KM824SSE4J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Nation Sky Network Technology Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing Nation Sky Network Technology Co.,Ltd";
 				INFOPLIST_FILE = SecCom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

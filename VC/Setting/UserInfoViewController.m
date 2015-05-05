@@ -17,7 +17,7 @@ typedef enum
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "VendorMacro.h"
 #import "LBFinder.h"
-
+#import "EditeUserInfoViewController.h"
 @interface UserInfoViewController ()
 @property (nonatomic, strong) NSMutableArray *assets;
 
@@ -26,7 +26,7 @@ typedef enum
 
 
 @implementation UserInfoViewController
-
+@synthesize editBtn;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"个人信息";
@@ -39,9 +39,30 @@ typedef enum
     UIImage *userPortraitImg=[UIImage imageWithContentsOfFile:userPortraitImgPath];
     
     [self.userPortraitBtn setBackgroundImage:userPortraitImg forState:UIControlStateNormal];
-
+    
+//    editBtn=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+//    
+//    
+//    
+//    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:editBtn];
     
     
+    
+    
+    
+    UIButton*rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
+    [rightButton setTitle:@"编辑" forState:UIControlStateNormal];
+    [rightButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(editUserinfoInfo)forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem*rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    self.navigationItem.rightBarButtonItem= rightItem;
+    
+    self.navigationController.navigationBarHidden=NO;
+}
+-(void)editUserinfoInfo
+{
+    EditeUserInfoViewController *edite=[[EditeUserInfoViewController alloc]init];
+    [self.navigationController pushViewController:edite animated:YES];
 }
 -(IBAction)uploadUserPortrait:(id)sender
 {

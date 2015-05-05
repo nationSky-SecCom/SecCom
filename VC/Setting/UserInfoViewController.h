@@ -18,5 +18,6 @@
 @property(nonatomic,strong)IBOutlet UILabel *signLabel;
 @property(nonatomic,strong)IBOutlet UILabel *phoneNumLabel;
 @property(nonatomic,strong)IBOutlet UILabel *emailLable;
+@property(nonatomic,strong)UIButton *editBtn;
 
 @end
