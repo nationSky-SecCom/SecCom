@@ -19,11 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     
-//    LoginVC *login=[[LoginVC alloc]init];
-//    UINavigationController *navi=[[UINavigationController alloc]initWithRootViewController:login];
-//    self.window.rootViewController=navi;
-//    
-    
+    LoginVC *login=[[LoginVC alloc]init];
+    UINavigationController *navi=[[UINavigationController alloc]initWithRootViewController:login];
+    self.window.rootViewController=navi;
+
     
 //    LBTabBarController *tabBar = [[LBTabBarController alloc] init];
 //    UINavigationController *navTabBar = [[UINavigationController alloc] initWithRootViewController:tabBar];
