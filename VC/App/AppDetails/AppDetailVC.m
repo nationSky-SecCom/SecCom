@@ -11,6 +11,7 @@
 #import "SDWebImage/UIImageView+WebCache.h"
 #import "AppListCell.h"
 #import "AppDetailsImageShowCell.h"
+#import "AppDetailsDescriptionCell.h"
 
 @interface AppDetailVC ()
 
@@ -127,6 +128,10 @@
             break;
         case 1:
             return 400;
+            break;
+        case 2:
+
+            return 0;
             break;
             
         default:

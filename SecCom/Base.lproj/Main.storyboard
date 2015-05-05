@@ -180,11 +180,75 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Rvh-k9-6nR" id="hTY-W4-GiI"/>
+                        <segue destination="yUf-Dg-iQc" kind="show" identifier="CheckForUpdatesVC" id="y2t-qa-dxy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOP-sq-Rnq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1993" y="1180"/>
+        </scene>
+        <!--Check For UpdatesVC-->
+        <scene sceneID="qAq-Il-4uM">
+            <objects>
+                <viewController storyboardIdentifier="CheckForUpdatesVC" id="yUf-Dg-iQc" customClass="CheckForUpdatesVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AfP-bv-QqF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wof-z2-caK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mbU-qN-Lyr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkF-7X-CGG">
+                                <rect key="frame" x="225" y="90" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="vIC-5q-G0k"/>
+                                    <constraint firstAttribute="height" constant="150" id="wlx-sc-vyI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecCom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj9-OX-Ee7">
+                                <rect key="frame" x="200" y="260" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Zgs-hc-De3"/>
+                                    <constraint firstAttribute="height" constant="40" id="kZa-Fn-P4u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uu-Nz-v0g">
+                                <rect key="frame" x="225" y="400" width="150" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="YYF-05-FUZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="检查更新">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkForUpdatesAction:" destination="yUf-Dg-iQc" eventType="touchUpInside" id="Xas-Qz-raP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cj9-OX-Ee7" secondAttribute="centerX" id="5qq-aX-u0X"/>
+                            <constraint firstItem="cj9-OX-Ee7" firstAttribute="top" secondItem="rkF-7X-CGG" secondAttribute="bottom" constant="20" id="BLN-6k-Ogl"/>
+                            <constraint firstAttribute="centerX" secondItem="5uu-Nz-v0g" secondAttribute="centerX" id="Cy9-R3-FDi"/>
+                            <constraint firstItem="rkF-7X-CGG" firstAttribute="top" secondItem="AfP-bv-QqF" secondAttribute="bottom" constant="70" id="G8Z-2Z-Jhq"/>
+                            <constraint firstItem="5uu-Nz-v0g" firstAttribute="top" secondItem="cj9-OX-Ee7" secondAttribute="bottom" constant="100" id="W7l-mJ-XlS"/>
+                            <constraint firstAttribute="centerX" secondItem="rkF-7X-CGG" secondAttribute="centerX" id="zQT-qQ-iYO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkUpdatesButton" destination="5uu-Nz-v0g" id="RTb-hz-stH"/>
+                        <outlet property="iconImageView" destination="rkF-7X-CGG" id="u7k-8U-zFZ"/>
+                        <outlet property="nameLabel" destination="cj9-OX-Ee7" id="LrG-Un-bOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jw0-KE-mLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="1180"/>
         </scene>
         <!--App DetailVC-->
         <scene sceneID="3tK-EU-rB2">

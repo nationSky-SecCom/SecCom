@@ -11,6 +11,7 @@
 #import "AboutSetingViewController.h"
 #import "SettingHeaderCellTableViewCell.h"
 #import "SettingSwitchCell.h"
+#import "CheckForUpdatesVC.h"
 
 
 @interface SettingVC ()
@@ -152,6 +153,15 @@
                     AboutSetingViewController *about=[[AboutSetingViewController alloc]init];
                     [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
                     [self.navigationController pushViewController:about animated:YES];
+                }
+                    break;
+                case 1://检查更新
+                {
+                    UIStoryboard *main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                    CheckForUpdatesVC *vc = [main instantiateViewControllerWithIdentifier:@"CheckForUpdatesVC"];
+                    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
+//                    [self.navigationController pushViewController:vc animated:YES];
+                    [self performSegueWithIdentifier:@"CheckForUpdatesVC" sender:nil];
                 }
                     break;
                     
