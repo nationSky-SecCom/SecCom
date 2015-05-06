@@ -1160,13 +1160,10 @@
 				7528B0081AE77C4000250D08 /* AppListCell.xib in Resources */,
 				75F6AF641AF8688C00DD8B33 /* AppDetailsDescriptionCell.xib in Resources */,
 				7528AFFC1AE73E9A00250D08 /* AppListUnInstalled.xib in Resources */,
-<<<<<<< Updated upstream
-				75F6AF5E1AF867CB00DD8B33 /* AppDetailsImageShowCell.xib in Resources */,
-				7500ABB81AF7767500225020 /* SettingSwitchCell.xib in Resources */,
-=======
+
 				75F7AAE61AF22295004743FC /* AppDetailsImageShowCell.xib in Resources */,
 				186F24F91AF8ACD40003C82C /* EditeUserInfoViewController.xib in Resources */,
->>>>>>> Stashed changes
+
 				75EDCA051ADFA99900D5A069 /* menu-button.png in Resources */,
 				75FB5C101ADE2CDE00267D03 /* Main.storyboard in Resources */,
 				7500AB8E1AF7531500225020 /* Images.xcassets in Resources */,
